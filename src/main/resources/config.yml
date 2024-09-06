@@ -1,0 +1,83 @@
+
+#
+# SYSTEM EXPERIENCE LEVEL CONFIGURATION
+#
+
+multi_experience_required: 1.5
+experience_base: 100
+experience-per-kill: 20
+gcoins-per-kill: 15
+contribution-kill-50-superior: 50
+contribution-kill-50-below: 30
+
+max-level: 20 # level minimo base para el prestigio 1
+multi-level-prestige: 2 # multi maxlevel * multi = level requerido para subir de prestigio
+
+time_afk: 60 # seconds
+time_warning: 30 # SEGUNDOS ANTES SERA ADVERTIDO
+
+messages:
+  TIME_AFK: "&cFuiste kickeado"
+  TIME_WARNING: "&cSeras expulsado en %time_restante% segundos"
+  NO_COMMAND_COMBAT: "&cNo puedes usar ese comndo en combate"
+  COMBAT_JOIN: "&cHas ingresado al modo combate con %player%"
+  COMBAT_LEAVE: "&cSaliste del modo combate"
+  GIVE_COIN: "&cSe te ha entregado %coins%"
+  GIVE_XP: "&cSe te ha entregado %xp%"
+  GIVE_LEVEL: "&cSe te ha incrementado %nivel%"
+  GIVE_XP_COMMAND: "&cSe le ha dado %player% xp %xp%"
+  GIVE_COIN_COMMAND: "&cSe le ha dado %player% coins %coins%"
+  GIVE_LEVEL_COMMAND: "&cSe le ha agregado a %player% %nivel%"
+
+DELAY-BLOCK: 20 # Tiempo que se demorara en desaprecer el bloque en segundos
+
+list-commands-block: # COMBAT LOG
+  - /spawn
+  - /tell
+  - /tp
+
+# DATA BASE INFO
+host_name: localhost
+port_host: 27017
+data_base_name: "minecraft"
+db_username: ""
+db_password: ""
+
+# ZONE SPAWN
+lobby-data:
+  world: world
+  location: 0.544,81.0,-28.493
+  location-positions:
+    pos1: 5.226132930343478,78.0,-4.213675589740881
+    pos2: -4.699999988079071,74.0,5.699999988079071
+
+
+#Combat log
+time-combat: 1 #minutes
+
+#ITEMS PRICIPALES
+items-hub:
+  1: # SLOT
+    MATERIAL: APPLE # MATERIAL
+    NAME: "&aSelector de Kits &7(Click Derecho)"
+    LORE: # LORE META
+      - "&cThis apple"
+  2: # SLOT
+    MATERIAL: ARROW # MATERIAL
+    NAME: "&aTienda &7(Click Derecho)"
+    LORE: # LORE META
+      - "&cThis ARROW"
+
+kill-streak-rewards:
+  2:
+    ARMORS:
+      HELMET: DIAMOND_HELMET:1:ENCHANTS:PROTECTION_EXPLOSIONS:20:PROTECTION_ENVIRONMENTAL:10
+    WEAPON:
+      SWORD: DIAMOND_SWORD:1:ENCHANTS:DAMAGE_ALL:15
+    ITEMS:
+      - APPLE:5
+  4:
+    ARMORS:
+      CHEST_PLATE: DIAMOND_CHESTPLATE:1:ENCHANTS:PROTECTION_PROJECTILE:5
+    ITEMS:
+      - GOLDEN_APPLE:3

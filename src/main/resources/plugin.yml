@@ -1,0 +1,8 @@
+name: SimpleCorePvP
+version: '${project.version}'
+main: com.venned.simplecorepvp.Main
+depend:
+  - PlaceholderAPI
+commands:
+  core:
+    description: Manager Command Core
